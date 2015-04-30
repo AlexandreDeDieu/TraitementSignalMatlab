@@ -22,7 +22,7 @@ function varargout = projet2015(varargin)
 
 % Edit the above text to modify the response to help projet2015
 
-% Last Modified by GUIDE v2.5 30-Apr-2015 13:00:03
+% Last Modified by GUIDE v2.5 30-Apr-2015 13:30:13
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -223,4 +223,13 @@ function pushbutton18_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 Effet_overdrive(handles.x,handles.Fe)
+guidata(hObject,handles);
+
+
+% --- Executes on button press in pushbutton19.
+function pushbutton19_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton19 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+Effet_Distortion(handles.x,handles.Fe)
 guidata(hObject,handles);

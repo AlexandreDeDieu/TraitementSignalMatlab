@@ -22,7 +22,7 @@ function varargout = projet2015(varargin)
 
 % Edit the above text to modify the response to help projet2015
 
-% Last Modified by GUIDE v2.5 15-Apr-2015 15:48:51
+% Last Modified by GUIDE v2.5 30-Apr-2015 13:00:03
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -197,3 +197,30 @@ axes(hObject);
 imshow(fond);
 guidata(hObject, handles);
 % Hint: place code in OpeningFcn to populate axes9
+
+
+% --- Executes on button press in pushbutton16.
+function pushbutton16_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton16 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+Effet_WaWa2(handles.x,handles.Fe)
+guidata(hObject,handles);
+
+
+% --- Executes on button press in pushbutton17.
+function pushbutton17_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton17 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+Effet_modulator(handles.x,handles.Fe)
+guidata(hObject,handles);
+
+
+% --- Executes on button press in pushbutton18.
+function pushbutton18_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton18 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+Effet_overdrive(handles.x,handles.Fe)
+guidata(hObject,handles);
